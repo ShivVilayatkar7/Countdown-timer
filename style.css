@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: #3a3a3a;
+}
+
+/* main */
+.main {
+    margin-top: 10%;
+}
+.ctrbox {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+/* input box */
+.formIn{
+    text-align: center;
+}
+.formIn h2{
+    color: #ffffff;
+}
+#formin {
+    margin: 0 8%;
+    align-items: center;
+}
+.inputbox {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.formIn input {
+    padding: 12px 80px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-right: -35px;
+}
+.inputbox button {
+    background-color: #27c200;
+    color: #202020;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 13px;
+    padding: 13px 50px;
+    border-radius: 40px;
+}
+.inputbox button:hover {
+    color: #fff;
+}
+
+/* counter box */
+.counterboxx{
+    display: inline;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.content p{
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    width: max-content;
+    font-size: 30px;
+    border-radius: 100px;
+    margin: 20px;
+}
+.content h6{
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: lighter;
+}
+.parts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* control button */
+.controls {
+    margin: 30px 0;
+    text-align: center;
+}
+.controls button{
+    border-radius: 30px;
+    text-align: center;
+    width: max-content;
+    padding: 10px 30px;
+    margin: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #e0e0e0;
+    transition: 0.2s;
+}
+.counter p {
+    border: 10px double #267900;
+}
+#stopp {
+    background-color: rgb(253, 169, 59);
+    color: #202020;
+}
+#stopp:hover {
+    color: #fff;
+}
+#resett {
+    background-color: rgb(255, 58, 97);
+    color: #202020;
+}
+#resett:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+    .main {
+        margin: 10% 0;
+    }
+    .formIn{
+        margin: 0 0 5% 0;
+    }
+    .formIn label{
+        font-size: 20px;
+    }
+    .controls button{
+        text-align: center;
+        width: 30%;
+    }
+    .formIn input {
+        padding: 12px 40px 12px 10px;
+        margin-right: -35px;
+    }
+    .inputbox button {
+        padding: 13px 22px;
+    }
+    .content .parts{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content p{
+        font-size: 25px;
+        padding: 20px;
+        margin: 5px;
+    }
+    .content h6 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .main {
+        margin: 20% 2%;
+    }
+    .content p{
+        padding: 8px;
+        margin: 5px;
+        border: 5px double #267900;
+    }
+    .controls button{
+        padding: 10px 30px;
+        width: fit-content;
+    }
+}

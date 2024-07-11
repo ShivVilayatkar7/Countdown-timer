@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown timer</title>
+    <link rel="shortcut icon" href="stopwatch.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="ctrbox">
+            <div class="formIn">
+                <h2>Input Date & Time</h2>
+                <form id="formin">
+                    <div class="inputbox">
+                        <input type="datetime-local" id="dateInput" name="dateInput" required>
+                        <button id="startt" type="button" onclick="myFunction()">Start</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="counterboxx">
+            <div class="content">
+                    <!-- days -->
+                    <div class="counter">
+                        <p id="days">00</p>
+                        <h6>Days</h6>
+                    </div>
+                    <!-- hours -->
+                    <div class="counter">
+                        <p id="hours">00</p>
+                        <h6>Hours</h6>
+                    </div>
+                <!-- ------------------------------ -->
+                        <!-- minutes -->
+                        <div class="counter">
+                            <p id="minutes">00</p>
+                            <h6>Minutes</h6>
+                        </div>
+                    <!-- seconds -->
+                    <div class="counter">
+                        <p id="seconds">00</p>
+                        <h6>second</h6>
+                    </div>
+            </div>
+        </div>
+        <!-- buttons -->
+        <div class="controls">
+            <button id="stopp" class="stopme" onclick="stop()">Stop</button>
+            <button id="resett" class="resetme" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
